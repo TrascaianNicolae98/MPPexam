@@ -4,6 +4,7 @@ import {AnimalsService} from '../animals.service';
 import {Router} from '@angular/router';
 import {Owners} from '../Model/Owners';
 import {OwnersService} from '../owners.service';
+import {MatCheckbox} from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-owners',
@@ -28,4 +29,8 @@ export class OwnersComponent implements OnInit {
     this.canShow = true;
   }
 
+  // tslint:disable-next-line:typedef
+  clickOwner(event, checkbox: MatCheckbox) {
+    this.router.navigate(['animalcontest/contest-participants/details/' + checkbox.value])
+  }
 }
