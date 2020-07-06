@@ -1,0 +1,10 @@
+<p>owners works!</p>
+<div *ngIf="this.canShow==true">
+  <ul>
+    <li *ngFor="let owner of this.listOfOwners.listOfOwners">
+      {{owner["id"]}}
+      {{owner["name"]}}
+      {{owner["email"]}}
+    </li>
+  </ul>
+</div>
