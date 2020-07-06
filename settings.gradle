@@ -1,0 +1,9 @@
+rootProject.name = 'catalog-rest-template'
+include 'catalog-core'
+include 'catalog-web'
+include 'catalog-client'
+include 'sensor-app'
+include 'server-app'
+include 'monitor-core'
+include 'monitor-web'
+
